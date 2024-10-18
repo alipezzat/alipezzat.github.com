@@ -1,0 +1,242 @@
+<html>
+    <head>
+        <title>LISTAS EN HTML</title>
+        <style type="text/css">
+            *{
+                padding: 0px;
+                margin: 0px;
+            }
+            h1{
+                font-family:cursive, serif;}
+            h2{
+                font-family: "Afacad Flux", sans-serif;
+                font-size: 35px;}
+            h2{
+                padding: 10px;
+                color: white;
+            }
+            ol, ul, dt{
+                padding: 20px;
+            }
+            header,nav,main,footer{
+                width: 97%;
+                padding: 20px;
+                margin-left: auto;
+                margin-right: auto;
+                font-family: "Work Sans", sans-serif;
+            }
+            header{
+                /*width:1280px;*/
+                height:50px;
+                background-color: #1B357E;
+                color:white;
+                text-align: center;
+            }
+              nav{
+                height: 50px;
+                background-color: white;
+            }
+              main{
+                height: auto;
+                background-color: #1B357E; 
+            }
+             footer{
+                height: 50px;
+                background-color: #72A0CD;
+                color: white;
+                text-align: center;
+            }
+             section{
+                /*width: 880px;*/
+                height:auto;
+                padding: 30px;
+                background-color: #72A0CD;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 50px;
+            }
+            h1{
+                margin-bottom: 15px;
+             }
+            h1,h6{
+                text-align: center;
+            }
+            nav ul{
+                list-style-type: none;
+                text-align: center;
+            }
+            nav ul li{
+                width:90px;
+                background-color: #72A0CD;
+                color: white;
+                margin-bottom:10px;
+                padding: 10px;
+                text-align: center;
+                border-width: 3px;
+                border-color: #1B357E;
+                border-style: solid;
+                display: inline-block;
+            }
+            li,dl{
+                color: white;
+            }
+            nav ul li:hover{
+                background-color: #C5CED4;
+                width: 90;
+            }
+            nav ul li a:hover{  
+                color: black;
+                font-size: 17px;
+                font-weight: bold;
+            }
+            nav ul li a:link, nav,ul li a:visited{
+                color: white;
+                text-decoration: none;
+            }
+             a{
+              text-decoration: none;  
+            }
+             main nav{
+                width: 820px;
+                background-color: transparent;
+            }
+            main nav{
+                width: 820px;
+                background-color: white;
+            }
+            #gt350{
+        width: 200px;
+        float: right;
+            }
+           #gt500{
+        width: 200px;
+        float: right;
+            }
+            #gt500kr{
+        width: 200px;
+        float: right;
+            }
+            
+            
+        </style>
+               
+    </head>
+    <body>
+        <header>
+        <h1>Listas en html</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="listas.html">Listas</a></li>
+                <li><a href="enlaces.html">Enlaces</a></li>
+                <li><a href="tablas.html">Tablas</a></li>
+                <li><a href="imagenes.html">Imagenes</a></li>
+                <li><a href="audio.html">Audio</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="formularios.html">Formulario</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <h2 id="lista_ordenada">Tipos de Ford Mustang</h2>
+                <ol type="a">
+                    <li> Mustang Ecoboost</li>
+                    <li>Mustang Shelby GT500</li>
+                    <li>Mustang Shelby GT350</li>
+                    <li>Mustang GT</li>
+                    <li>Mustang GTD</li>
+                    <li>Mustang Bullit</li>
+                    <li>Mustang Mach1</li>
+                </ol>
+            </section>
+            <section>
+                <h2 id="lista_desordenada">Colores emblematicos del Mustang:</h2>
+                <ul>
+                    <li>Rojo</li>
+                    <li>Negro</li>
+                    <li>Azul</li>
+                    <li>Blanco</li>
+                    <li>Gris</li>
+                    <li>Naranja</li>
+                </ul>
+            </section>
+            <section>
+                <h2 id="lista_mixta">Versiones del Ford Mustang</h2>
+               <ol type= "i">
+                <li> Mustang 1967 </li>
+                    <ul>
+                        <li>Shelby</li>
+                            <ul>
+                                <li>GT500</li>
+                                <li>GT350</li>
+                            </ul>
+                        <li>GT</li>
+                            <ul>
+                                <li>Convertible</li>
+                                <li>Coupe</li>
+                            </ul>
+                        <li>Boss</li>
+                        <li>California Especial</li>
+                    </ul>
+                <li>Mustang 1971</li>
+                    <ul>
+                        <li>Mach 1</li>
+                        <li>Boss</li>
+                        <li>Cobra</li>
+                        <li>Hardtop</li>
+                    </ul>
+                <li>Mustang 1999</li>
+                     <ul>
+                         <li>50 aniversario</li>
+                            <ul>
+                            <li>6 cilindros</li>
+                            <li>Convertible</li>
+                            <li>Coupe</li>
+                            </ul>
+                         <li>GT</li>
+                            <ul>
+                            <li>VIP</li>
+                            </ul>
+                         <li>Cobra</li>
+                            <ul>
+                            <li>Terminator</li>
+                            </ul>
+                         <li>Especiales</li>
+                            <ul>
+                                <li>Mach 1</li>
+                                <li>Saleen</li>
+                                <li>Roush</li>
+                                <li>Bullit</li>
+                            </ul>
+            </ol>
+            </section>
+            <section>
+                <h2 id="lista_conceptos">Variante Shelby</h2>
+                <dl>
+                    <dt><b><i>Shelby GT350:</i></b></dt>
+                    <dd><img id="gt350" src="../IMAGENES/shelbygt350.jpg" alt="gt350">Los automóviles de 1965-1966 fueron los más pequeños y ligeros de los modelos GT 350. Estos a menudo se llamaban "Cobra", que fue el coche deportivo de dos asientos AC Cobra también producido por Shelby American durante el mismo período. Ambos modelos usaban el emblema Cobra, un esquema de pintura similar y la cubierta opcional de la válvula "Cobra" en muchos GT350, que formaban parte de un vínculo comercial de Shelby, así como uno de sus símbolos icónicos. Todos los coches de 1965-66 presentaron el bloque K-Code de 289 plg³ (4,7 litros) y 271 HP (275 CV; 202 kW), modificado para producir 306 HP (310 CV; 228 kW). La literatura de mercadotecnia se refería a este motor como el "Cobra hi-riser" debido a su elevado colector de admisión. Comenzando como un Mustang común con un cambio manual de cuatro velocidades y un eje trasero de 9 pulgadas (22,9 cm), los coches fueron enviados a Shelby American, donde recibieron los colectores de alta resistencia, los cabezales Tri-Y y recibieron mayores frenos de tambor traseros del Ford Galaxie con forros metálicos y frenos de disco delanteros Kelsey-Hayes.</dd>
+                    <dt><b><i>Shelby GT500:</i></b></dt>
+                    <dd><img id="gt500" src="../IMAGENES/gt500.webp"alt="gt500">El G.T. 500 fue agregado a la alineación, equipado con un motor V8 "Ford Cobra Serie FE" de 428 plg³ (7 litros), con dos carburadores de cuatro gargantas Holley de 600 pies cúbicos por minuto (17,0 m³/min), sentado sobre un colector de admisión de aluminio de media altura.
+
+                    Los planes documentados para introducir un año de producción media de un descapotable se archivaron debido a problemas de suministro, producción y financieros que sucedieron tan pronto como los primeros autos comenzaron a llegar a las instalaciones de Shelby en Los Ángeles en septiembre. En octubre de 1966, Ford tomó el control de la ingeniería y la compra.13​ A.O. Smith fue golpeado para reparar el accesorio de fibra de vidrio.14​ y problemas de calidad. Seis meses después, en mayo de 1967, se tomó la decisión de terminar la operación de Shelby, con sede en California. El 18 de agosto de 1967, un pequeño personal, junto con los restantes coches de ingeniería, fue enviado a Ionia (Míchigan). El pequeño personal de la recién formada Shelby Automotive, Inc. tuvo sustancialmente menos participación después de este tiempo.</dd>
+                    <dt><b><i>Shelby GT500KR:</i></b></dt>
+                    <dd><img id="gt500kr" src="../IMAGENES/gt500kr.jpg"alt="gt500kr">El Ford Shelby GT500KR, revelado en el Salón Internacional del Automóvil de Nueva York de 2007, se lanzó en la primavera de 2008. El automóvil está equipado con una versión sobrealimentada de 5409 cm³ (5,4 L; 330,1 plg³) con 540 HP (547 CV; 403 kW) de potencia del V8 base GT500, con función de entrada de aire frío y calibración única. SVT y Shelby anunciaron que 1000 ediciones del 40 aniversario se construirían para los Estados Unidos en 2008, con otras 571 unidades en 2009. Esta producción de 1571 unidades coincide con la del GT500KR original de 1968. En total, se produjeron 1712 unidades, con las unidades restantes destinadas a Canadá, los mercados de exportación y las ventas militares.
+
+                    Todos los KR fueron construidos por AutoAlliance International en la línea de producción normal de Mustang y luego enviados a Shelby Automobiles Incorporated (SAI) donde se completó el montaje final. SAI fue el fabricante de registro.</dd>
+                </dl>
+            </section>
+            <nav>
+                <ul>
+                     <li><a href="#lista_ordenada">Tipos</a></li>
+                <li><a href="#lista_desordenada">Colores</a></li>
+                <li><a href="#lista_mixta">Versiones</a></li>
+                <li><a href="#lista_conceptos">Shelby's</a></li>
+                </ul>
+            </nav>
+        </main>
+        <footer>
+            <h6>Elaborado por Ali Salvador Pezzat Victoria</h6>
+        </footer>
+    </body>
+</html>

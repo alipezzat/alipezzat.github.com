@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>FORMULARIOS HTML</title>
+<link href="../../CSS/style.page1.CSS" rel="stylesheet" type="text/css">
+	<style type="text/css">
+		form{
+			width: 50%;
+			height: auto;
+			padding: 30px;
+			background-color:#671E74;
+			color: #FFB2F2;
+			margin: 0 auto;
+		}
+		label{
+			padding-bottom: 10px;
+			padding-top: 10px;
+		}
+		label, input{
+			display: block;
+			margin-left: 10px;
+		}
+		input[type=text], input[type=password]{
+			width: 100%;
+			color: #671E74;
+			padding: 8px;
+			font-weight: bold;
+			border: 1px solid #D7A9FB;
+			border-radius: 4px;
+			background-color: #7A487B;
+		}
+		input[type=submit]{
+			width: 30%;
+			background-color: #D7A9FB;
+			margin-top: 20px;
+			padding: 10px;
+			margin: 0 auto;
+			border-radius: 10px;
+			color: white;
+			font-weight: bolder;
+		}
+		input[type=text]:focus, input[type=password]:focus{
+			background-color: #AB65A8;
+			border:3px solid #D7A9FB;
+		}
+		input[type=number]{
+			width: 100%;
+			color: white;
+			padding: 8px;
+			font-weight: bold;
+			border: 1px solid #D7A9FB;
+			border-radius: 4px;
+			background-color: #7A487B;
+		}
+		input[type=number]:focus, select:focus{
+			background-color: #AB65A8;
+			border:3px solid #D7A9FB;
+		}
+		select{
+			width: 100%;
+			color: #671E74;
+			padding: 8px;
+			font-weight: bold;
+			border: 1px solid #D7A9FB;
+			border-radius: 4px;
+			background-color: #7A487B;
+			color: white;
+		}
+	</style>
+</head>
+
+<body>
+<header>
+  <h1>FORMULARIOS EN HTML</h1>
+</header>
+<nav>
+            <ul>
+                <li><a href="../../../Ali 11-15">Inicio</a></li>
+                <li><a href="../listas.html">Listas</a></li>
+                <li><a href="../enlaces.html">Enlaces</a></li>
+                <li><a href="../tablas.html">Tablas</a></li>
+                <li><a href="../imagenes.html">Imagenes</a></li>
+                <li><a href="../audio.html">Audio</a></li>
+                <li><a href="../video.html">Video</a></li>
+                <li><a href="../formularios.html">Formulario</a></li>
+            </ul>
+</nav>
+<main>
+  <section>
+    <h2>FORMULARIO USUARIO 1</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus voluptatem, molestias doloremque ipsa officia. Facilis id, tempora natus quasi magni eligendi veritatis enim deleniti, quos, cupiditate sapiente esse alias laboriosam ipsum facere consectetur minima nobis itaque quis blanditiis aliquid quia recusandae! Quasi necessitatibus sint voluptatum quae, suscipit natus ad, placeat incidunt ducimus sapiente expedita quas vel alias, reprehenderit consectetur laboriosam autem, et. Doloribus vero odio pariatur saepe aliquid. Illum at veritatis cum non esse quas placeat, id, nobis reprehenderit assumenda sequi eum quaerat, adipisci sit deserunt quisquam vero, quo. Quos eveniet non officia odit ad eius quis sapiente distinctio. Voluptas.</p>
+	  <br>
+	  <form action="" method="get">
+	  	<label id="">Nombre:</label>
+		<input type="text" id="nombre" name="nombre">
+		<label id="">Contraseña:</label>
+		<input type="password" id="contrasena" name="contraseña">
+		<input type="submit" value="Enviar">
+	  </form>
+  </section>
+  <section>
+    <h2>Este es el contenido de la etiqueta H2 de diseño</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque aliquid quos, inventore, cum repellat voluptates aperiam nulla necessitatibus consequatur reprehenderit sapiente rerum repellendus facilis optio sint magnam impedit aliquam deleniti error modi voluptatem consectetur hic? Cumque nam quia sint voluptate minima aut cum itaque omnis voluptatum adipisci rerum autem odio architecto suscipit alias nesciunt, voluptates dolore excepturi. Ullam atque nostrum beatae quas commodi quibusdam alias vitae, modi aspernatur architecto veritatis ducimus quo veniam nihil nam dignissimos officia incidunt id harum. Perspiciatis obcaecati fugiat amet itaque tenetur magnam, incidunt iusto alias ex temporibus eum, aperiam soluta adipisci laboriosam quia similique ea?</p>
+	  <br>
+    <form id="form1" name="form1" method="get">
+<label for="nombre">Nombre:</label>
+      <input type="text" name="nombre" id="nombre">
+      <label for="number">Edad:</label>
+      <input type="number" name="number" id="number" min="18" max="90">
+      <label for="Estado">Estado:</label>
+      <select name="Estado" id="Estado">
+		  <option value="Aguascalientes">Aguascalientes</option>
+		  <option value="Colima">Colima</option>
+		  <option value="Puebla">Puebla</option>
+		  <option value="Durango">Durango</option>
+		  <option value="Guadalajara">Guadalajara</option>
+		  <option value="Nayarit">Nayarit</option>
+		  <input type="submit" value="Enviar">
+      </select>
+      
+    </form>
+  </section>
+  <section>
+    <h2>Este es el contenido de la etiqueta H2 de diseño</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque quos, unde dignissimos quae porro aliquam ipsum dolores deleniti, sapiente culpa qui rem architecto! Vel non eaque praesentium sint facere assumenda quia? Esse repellat, error sapiente officia dolores nemo a ipsam fuga facilis dolorum reprehenderit quas possimus eveniet neque. Eius nisi voluptate officiis vel ratione, deserunt incidunt harum recusandae nulla vitae reiciendis saepe eveniet ullam mollitia perferendis voluptatem quod numquam, assumenda eligendi illo maiores autem consectetur. Vero modi velit minus officiis ipsam non voluptas magni enim iusto eveniet rem, ab similique eaque facere labore libero quaerat, esse exercitationem, impedit expedita a.</p>
+	  <br>
+    <form id="form2" name="form2" method="get">
+      <label for="textfield">Nombre:</label>
+      <input type="text" name="textfield" id="textfield">
+      <label for="Genero">Genero</label>
+		<table style="width: 40%;">
+        <tr>
+		<td><input type="radio" name="Genero" value="fem" id="Genero_0"></td>
+			<td><label>Femenino</label></td>
+        </tr>
+        <tr>
+			<td> <input type="radio" name="Genero" value="mas" id="Genero_1"></td>
+			<td><label>Masculino</label></td>
+        </tr>
+        <tr>
+			<td><input type="radio" name="Genero" value="otro" id="Genero_2"></td>
+			<td><label>Otro</label></td>
+        </tr>
+      </table>
+	  <label for="musica">¿Cual es tu genero musical favorito?</label>
+		<p>
+		  <label>Pop</label>
+			<input type="checkbox" name="musica" value="pop" id="musica_0">
+		  <br>
+		  <label>Rock</label>
+			<input type="checkbox" name="musica" value="rock" id="musica_1">
+		  <br>
+		  <label>Clasica</label>
+			 <input type="checkbox" name="musica" value="clasica" id="musica_2">
+		  <br>
+		  <label>Tropical</label>
+			 <input type="checkbox" name="musica" value="tropical" id="musica_3">
+		  <br>
+		  <label>Jazz</label>
+			<input type="checkbox" name="musica" value="jazz" id="musica_4">
+		  <br>
+			 <input type="submit" value="Enviar">
+	  </p>
+    </form>
+  </section>
+  <section>
+    <h2>Este es el contenido de la etiqueta H2 de diseño</h2>
+    <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam dolorum eaque perspiciatis voluptatem unde nemo maiores ipsum minima porro, perferendis veritatis minus explicabo, debitis et magnam provident quas! Doloribus sit quos magni nulla deleniti molestias explicabo autem, quod dolore excepturi impedit libero, doloremque, est atque quasi eius! Rem facilis minima doloremque vitae qui, iusto voluptatibus, obcaecati est unde dolores, odit deserunt, ipsam. Cumque, distinctio, consectetur. Commodi officia et ipsum aperiam perferendis, quibusdam animi, accusamus accusantium, fugit at aliquid aliquam. Illum id nesciunt asperiores quasi. Obcaecati, quis ipsa beatae vitae magnam eligendi molestiae doloremque iure repellendus inventore, aut hic, a ex.</p>
+  </section>
+</main>
+<footer>
+  <h5>Elaborado por Ali Salvador Pezzat Victoria</h5>
+</footer>
+	
+</body>
+</html>

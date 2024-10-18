@@ -1,0 +1,275 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>FORMULARIOS HTML</title>
+<link href="../CSS/style.page.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+		form{
+			width: 50%;
+			height: auto;
+			padding: 30px;
+			background-color:#1B357E;
+			color: white;
+			margin: 0 auto;
+		}
+		label, input{
+            margin-top: 20px;
+			margin-bottom: 20px;
+			margin-left: 10px;
+		}
+		input[type=text], input[type=password], input[type=number], input[type=select],input[type=email],input[type=date],input[type=file], select{
+			width: 90%;
+			color: white;
+            margin-top: 20px;
+			padding: 8px;
+			font-weight: bold;
+			border: 2px solid #72A0CD;
+			border-radius: 4px;
+			background-color:#C5CED4;
+            margin-bottom: 20px;
+		}
+		input[type=submit]{
+			width: 20%;
+			background-color: #72A0CD;
+			margin-top: 20px;
+			padding: 10px;
+			border-radius: 10px;
+			color: white;
+			font-weight: bolder;
+		}
+		input[type=text]:focus, input[type=password]:focus{
+			background-color: #C5CED4;
+			border:3px solid #72A0CD;
+		}
+		input[type=number]{
+			width: 90%;
+			color: white;
+            margin-top: 20px;
+			padding: 10px;
+			font-weight: bold;
+			border: 2px solid #72A0CD;
+			border-radius: 4px;
+			background-color: #C5CED4;
+		}
+		input[type=number]:focus, select:focus{
+			background-color: #C5CED4;
+			border:3px solid #72A0CD;
+		}
+		select{
+			width: 90%;
+			color: white;
+            margin-top: 20px;
+            margin-left: 10px;;
+			padding: 10px;
+			font-weight: bold;
+			border: 2px solid #72A0CD;
+			border-radius: 10px;
+			background-color: #C5CED4;
+			color: white;
+		}
+        input[type=number]:focus, select:focus{
+			background-color: #72A0CD;
+				}
+        P{
+            margin-bottom: 20px;
+        }
+        label{
+    		padding-top: 20px;
+        }
+	</style>
+</head>
+
+<body>
+<header>
+  <h1>Formularios en html</h1>
+</header>
+<nav>
+            <ul>
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="listas.html">Listas</a></li>
+                <li><a href="enlaces.html">Enlaces</a></li>
+                <li><a href="tablas.html">Tablas</a></li>
+                <li><a href="imagenes.html">Imagenes</a></li>
+                <li><a href="audio.html">Audio</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="formularios.html">Formulario</a></li>
+            </ul>
+</nav>
+<main>
+  <section>
+    <h2>Ingresar cuenta</h2>
+    <p>En esta seccion favor de ingresar su nombre de usuario y contraseña para poder poder registrar sus respuestas.</p>
+	  <br>
+	  <form action="" method="get">
+	  	<label id="">Nombre:</label>
+		<input type="text" id="nombre" name="nombre">
+		<label id="">Contraseña:</label>
+		<input type="password" id="contrasena" name="contraseña">
+		<input type="submit" value="Enviar">
+	  </form>
+  </section>
+  <section>
+    <h2>Datos del usuario</h2>
+    <p>Ingresar su numbre iniciando por apellidos, su edad y estado en donde se encuentra actualmente.</p>
+	  <br>
+    <form id="form1" name="form1" method="get">
+<label for="nombre">Nombre:</label>
+      <input type="text" name="nombre" id="nombre">
+      <label for="number">Edad:</label>
+      <input type="number" name="number" id="number" min="18" max="90">
+      <label for="Estado">Estado:</label>
+      <select name="Estado" id="Estado">
+		  <option value="Aguascalientes">Aguascalientes</option>
+		  <option value="Colima">Colima</option>
+		  <option value="Puebla">Puebla</option>
+		  <option value="Durango">Durango</option>
+		  <option value="Guadalajara">Guadalajara</option>
+		  <option value="Nayarit">Nayarit</option>
+		  <input type="submit" value="Enviar">
+      </select>
+      
+    </form>
+  </section>
+  <section>
+    <h2>Datos del usuario</h2>
+    <p>Volver a ingresar su nombre de igual manera iniciando por apellidos y comenzar a llenar el formulario.</p>
+	  <br>
+    <form id="form2" name="form2" method="get">
+      <label for="textfield">Nombre:</label>
+      <input type="text" name="textfield" id="textfield">
+      <label for="Genero">Genero</label>
+		<table style="width: 40%;">
+        <tr>
+		<td><input type="radio" name="Genero" value="fem" id="Genero_0"></td>
+			<td><label>Femenino</label></td>
+        </tr>
+        <tr>
+			<td> <input type="radio" name="Genero" value="mas" id="Genero_1"></td>
+			<td><label>Masculino</label></td>
+        </tr>
+        <tr>
+			<td><input type="radio" name="Genero" value="otro" id="Genero_2"></td>
+			<td><label>Otro</label></td>
+        </tr>
+      </table>
+	  <label for="musica">¿Cual es tu marca de autos favorita?</label>
+        <br>
+		<p>
+			<input type="checkbox" name="marca" value="ford" id="marca_0">
+            <label>Ford</label>
+		  <br>
+			<input type="checkbox" name="marca" value="chevrolet" id="marca_1">
+            <label>Chevrolet</label>
+		  <br>
+			 <input type="checkbox" name="marca" value="Dodge" id="marca_2">
+            <label>Dodge</label>
+		  <br>
+			 <input type="checkbox" name="marca" value="chrisler" id="marca_3">
+            <label>Chrisler</label>
+		  <br>
+			<input type="checkbox" name="marca" value="audi" id="marca_4">
+            <label>Audi</label>
+		  <br>
+			 <input type="submit" value="Enviar">
+	  </p>
+    </form>
+  </section>
+  <section>
+    <h2>Formulario final</h2>
+    <p>Por medidas de seguridad y garantizar que los formularios anteriores esten correctos, volver a ingresar su informacion de usario y terminar de llenar el formulario.</p>
+      <br>
+      <form action="" method="get">
+		  	<label for="Nombre2">Nombre(s):</label><br>
+            <input type="text" id="fname" name="fname" value="Ali"><br>
+            <label for="Apellidos">Apellidos:</label><br>
+            <input type="text" id="lname" name="lname" value="Pezzat"><br>
+            <label for="fechanacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="birthday" name="birthday"><br>
+            <label for="identi">Cardex:</label>
+            <input type="file" id="myfile" name="myfile"><br><br>
+            <label for="matricula">Matricula:</label>
+            <input type="text" id="matricula" name="matricula">
+               <br>
+            <label for="mustang">¿Cuantos mustangs te gustaria tener?:</label>
+              <input type="number" name="mustangs" id="mustangs" min="1" max="50">
+               <br>
+             <label for="mustangs">¿Cual de estos es tu mustang favorito?</label>
+			  <table  style="width=80%;">
+                <tr>
+                    <td><input type="radio" name="shelby" value="1967" id="mustang_1">
+                    </td>
+                    <td><label>Shelby GT500 1967</label></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="boss" value="1971" id="mustang_2"></td>
+                    <td><label> BOSS 1971</label></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="terminator" value="2002" id="mustang_3"></td>
+                    <td><label> Terminator 2002</label></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="gt350" value="2016" id="mustang_4"></td>
+                    <td><label> Shelby GT350 2016</label></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="gt500" value="2018" id="mustang_5"></td>
+                    <td><label> Shelby GT500 2018</label></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="Otro" value="otro" id="mustang_6"></td>
+                    <td><label>Otro</label></td>
+                </tr>
+                
+              </table>
+             
+               	<label for="mustang">Selecciona el mustang que consideras mas veloz:</label>
+                
+			<p>
+                <br>
+			  <input style="margin-left:10px;" type="checkbox" name="mustang" value="1967" id="mustang1">
+              <label>Shelby GT500 1967</label>
+			  <br>
+			  <input style="margin-left:10px;" type="checkbox" name="mustang" value="1971" id="mustang2">
+              <label>BOSS 1971</label>
+			  <br>
+			  <input style="margin-left:10px;" type="checkbox" name="mustang" value="2002" id="mustang3">
+              <label>Terminator 2002</label>
+			  <br>
+			  <input style="margin-left:10px;" type="checkbox" name="mustang" value="2016" id="mustang4">
+              <label>Shelby GT350 2016</label>
+			  <br>
+			  <input style="margin-left:10px;" type="checkbox" name="mustang" value="2018" id="mustang5">
+              <label>Shelby GT500 2018</label>
+			  <br>
+              <input style="margin-left:10px;" type="checkbox" name="mustang" value="2024" id="mustang6">
+              <label>Shelby GTD2024</label>
+			  <br>
+              <input style="margin-left:10px;" type="checkbox" name="mustang" value="otro" id="mustang7">
+              <label>Otro</label>
+			  <br>
+			  </p>
+              <label for="select">¿Cual crees que es el mayor rival del Mustang?</label>
+              <select name="rival" id="actividades">
+				  <option value="camaro">Camaro</option>
+				  <option value="corvette">Corvette</option>
+                  <option value="challenger">Challenger</option> 
+                  <option value="charger">Charger</option> 
+			  </select>
+               <label for="color">Color favorito para tu mustang:</label>
+               
+            <input type="color" id="color" name="color" value="#ff0000">
+               <br>
+               <input type="submit" value="ENVIAR">
+               <input type="reset" value="RESET">
+			
+		  </form>
+  </section>
+</main>
+<footer>
+  <h5>Elaborado por Ali Salvador Pezzat Victoria</h5>
+</footer>
+	
+</body>
+</html>

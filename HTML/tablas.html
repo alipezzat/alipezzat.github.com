@@ -1,0 +1,390 @@
+<html>
+    <head>
+        <title>Tablas en html</title>
+         <link rel="stylesheet" href="../CSS/style.page.css" type="text/css">
+        <style type="text/css">
+            h1, h2, p{
+                color: white;
+            }
+            #tabla_uno{
+                width: 100%;
+                text-align: center;
+                margin: 0 auto;
+                color: black;
+                border-style: solid;
+                border-color: #1B357E;
+                border-width: 5px;
+                border-spacing: 10px;
+            }
+            #tabla_uno th{
+                background-color: #1B357E;
+                color: white;
+            }
+            #tabla_uno td{
+                background-color: #C5CED4;
+                text-align: left;
+                border-style: solid;
+                border-color: #1B357E;
+                border-top-width: 3px;
+                border-radius: 5px;
+                margin: 10px;
+            }
+            #tabla_2{
+                color: white;
+            }
+            #tabla_2 td{
+                color: black;
+                height: 40px;
+                padding: 5px;
+            }
+            .celda_centrada{
+                text-align: center;
+                padding: 0px;
+                background-color: beige;
+            }
+            .tabla_dos{
+                width: 700px;
+                border-collapse: collapse;
+                border-color: #1B357E;
+                border-style: solid;
+                margin: 0 auto;
+            }
+            .tabla_dos td{
+                width: 150px;
+                border-color: #1B357E;
+                padding: 10px;
+                border-style: dashed;
+                background-color: #C5CED4;
+            }
+            .tabla_dos td, .tabla_dos th{
+                width: 150px;
+                padding: 10px;
+                border-style: dashed;
+            }
+            .tabla_dos th{
+                background-color: #1B357E;
+            }
+            #tabla_zebra{
+                width: 100%;
+                border-style: solid;
+                border-color: #1B357E;
+                border-top-width: 5px;
+                border-spacing: 5px;
+                padding: 15px;
+                height: 30px;
+                border-collapse: collapse;
+            }
+            #tabla_zebra tbody tr:nth-child(even){
+                background-color: beige;
+                padding: 10px;
+                height: 30px;
+            }
+            #tabla_zebra tbody tr:nth-child(odd){
+                background-color: #C5CED4;
+                height: 30px;
+            }
+            #tabla_zebra thead tr{
+                background-color: #1B357E;
+                color: white;
+            }
+            #tabla_zebra td{
+                padding: 10px;
+                border-width: 3px;
+                border-style: solid;
+            }
+            .tabla_hover{
+                width: 80%;
+                background-color: #1B357E;
+                text-align: left;
+                border-style: solid;
+                border-color: #1B357E;
+                border-top-width: 3px;
+                margin: 10px;
+                border-spacing: 10px;
+                border-collapse: collapse;
+                
+            }
+            .tabla_hover tr:hover{
+                background-color: beige;
+                color: #1B357E;
+                font-weight: bold;
+            }
+            .tabla_hover thead tr{
+                color: white;
+                text-align: center;
+            }
+            .tabla_hover tbody{
+                background-color: #C5CED4;
+            }
+            .tabla_hover tbody tr:hover{
+                width: 100%;
+                height: 30px;
+                background-color: 
+            }
+            .tabla_hover td{
+                padding: 10px;
+                width: 5px;
+                border-width: 5px;
+                border-style: solid;
+            }
+            #tabla4{
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Tablas en html</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="listas.html">Listas</a></li>
+                <li><a href="enlaces.html">Enlaces</a></li>
+                <li><a href="tablas.html">Tablas</a></li>
+                <li><a href="imagenes.html">Imagenes</a></li>
+                <li><a href="audio.html">Audio</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="formularios.html">Formulario</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section style="overflow: x">
+                <h2>Potencia Americana</h2>
+                <p>Esta tabla ofrece una comparación clara y detallada de la potencia de varios modelos a lo largo de los años, desde los clásicos hasta las versiones más recientes.
+
+                Podrás ver cómo ha evolucionado la potencia del Mustang, destacando las cifras de caballos de fuerza y torque de cada modelo. Además, la tabla incluye información sobre los motores, tipos de transmisión y cualquier innovación tecnológica que haya contribuido al rendimiento de cada versión.
+
+                Este recurso es ideal para quienes buscan entender mejor el legado del Mustang y cómo cada modelo ha aportado a su reputación como un verdadero ícono de la velocidad y la potencia.</p>
+                <br>
+                <table border="1" id="tabla_uno">
+                    <thead>
+                        <tr>
+                            <th>Año</th>
+                            <th>Version</th>
+                            <th>Motor</th>
+                            <th>Transmision</th>
+                            <th>Potencia</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1967</td>
+                            <td>Shelby GT500</td>
+                            <td>V8</td>
+                            <td>Manual</td>
+                            <td>300hp</td>
+                        </tr>
+                        <tr>
+                            <td>1971</td>
+                            <td>BOSS</td>
+                            <td>V8</td>
+                            <td>Manual</td>
+                            <td>352hp</td>
+                        </tr>
+                        <tr>
+                            <td>2002</td>
+                            <td>Cobra Terminator</td>
+                            <td>V8</td>
+                            <td>Manual</td>
+                            <td>400hp</td>
+                        </tr>
+                        <tr>
+                            <td>2015</td>
+                            <td>Shelby GT350</td>
+                            <td>V8</td>
+                            <td>Automatica</td>
+                            <td>423hp</td>
+                        </tr>
+                        <tr>
+                            <td>2018</td>
+                            <td>Shelby GT500</td>
+                            <td>V8</td>
+                            <td>Automatica</td>
+                            <td>510hp</td>
+                        </tr>
+                    </tbody>
+                    <tfoot></tfoot>
+                </table>
+            </section>
+            <section style="overflow: x auto">
+                <h2>De 0 a 100 en nada</h2>
+                <p>Esta tabla es un recurso fascinante que compara la capacidad de aceleración de diversos modelos a lo largo de los años, permitiéndote ver de un vistazo cómo se han desempeñado en una de las métricas más importantes para los amantes de la velocidad.
+
+                En ella encontrarás datos específicos sobre el tiempo que tarda cada modelo en alcanzar los 100 km/h desde un estado de reposo. Desde los clásicos hasta los más recientes, esta información te ayudará a apreciar cómo la ingeniería y la tecnología han evolucionado para mejorar el rendimiento del Mustang.
+
+                Ya sea que estés considerando comprar un Mustang o simplemente quieras conocer más sobre su legado de potencia y velocidad, esta tabla es una herramienta invaluable. </p>
+                <br>
+                 <table id="tabla_2" class="tabla_dos">
+                <thead>
+                    <tr>
+                        <th style="width: 200px;">Año</th>
+                        <th style="text-align:center; width: 150px;">Version</th>
+                        <th style="width: 200px;" colspan="2">Carroceria</th>
+                        <th style="width: 150px;">0-100km/h</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1967</td>
+                        <td style="text-align:center;">GT500</td>
+                        <td>Coupe</td>
+                        <td></td>
+                        <td style="text-align: center; padding: 0px; background: beige;">6.5seg</td>
+                    </tr>
+                    <tr>
+                        <td>1971</td>
+                        <td style="text-align:center;">BOSS</td>
+                        <td>Coupe</td>
+                        <td></td>
+                        <td style="text-align: center; padding: 0px; background: beige;">6.0seg</td>
+                    </tr>
+                    <tr>
+                        <td>2002</td>
+                        <td style="text-align:center;">Terminator</td>
+                        <td></td>
+                        <td>Convertible</td>
+                        <td style="text-align: center; padding: 0px; background: beige;">5.8seg</td>
+                    </tr>
+                    <tr>
+                        <td>2015</td>
+                        <td style="text-align:center;">GT350</td>
+                        <td>Coupe</td>
+                        <td></td>
+                        <td style="text-align: center; padding: 0px; background: beige;">4.0seg</td>
+                    </tr>
+                    <tr>
+                        <td>2018</td>
+                        <td style="text-align: center;">GT500</td>
+                        <td>Coupe</td>
+                        <td></td>
+                        <td style="text-align: center; padding: 0px; background: beige;">3.5seg</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Record</td>
+                        <td class="celda_centrada" style="background-color: cornflowerblue; color: red;">3.5seg</td>
+                    </tr>
+                </tfoot>
+                
+            </table>
+            </section>
+           
+            <section style="overflow: x auto">
+                <h2>Precios</h2>
+                <p>La siguiente tabla presenta una comparación de precios de diversos modelos del icónico Ford Mustang. Cada versión ofrece características únicas, desde el modelo base hasta los más avanzados con mayores prestaciones de rendimiento y lujo.</p>
+                <br>
+                <table border="3" id="tabla_zebra">
+                    <thead>
+                        <tr>
+                            <th>Version</th>
+                            <th>Año</th>
+                            <th>carroceria</th>
+                            <th>Transmision</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Shelby GT500</td>
+                            <td>1967</td>
+                            <td>Fastback</td>
+                            <td>Manual</td>
+                            <td>$8,000,000.00</td>
+                        </tr>
+                        <tr>
+                            <td>Boss</td>
+                            <td>1971</td>
+                            <td>Hardtop</td>
+                            <td>Manual</td>
+                            <td>$800,00.00</td>
+                        </tr>
+                        <tr>
+                            <td>Cobra terminator</td>
+                            <td>2003</td>
+                            <td>Coupe</td>
+                            <td>Manual</td>
+                            <td>$600,000.00</td>
+                        </tr>
+                        <tr>
+                            <td>Shelby GT350</td>
+                            <td>2015</td>
+                            <td>Coupe</td>
+                            <td>Automatico</td>
+                            <td>$1,500,000.00</td>
+                        </tr>
+                        <tr>
+                            <td>Shelby GT500</td>
+                            <td>2018</td>
+                            <td>Coupe</td>
+                            <td>Automatico</td>
+                            <td>$3,000,000.00</td>
+                        </tr>
+                         <tr>
+                            <td>Shelby GTD</td>
+                            <td>2024</td>
+                            <td>Coupe</td>
+                            <td>Automatico</td>
+                            <td>$5,700,000.00</td>
+                        </tr>
+                    </tbody>
+                    
+                    
+                </table>
+            </section>
+                <section style="overflow: x auto">
+                    <h2>Sus rivales</h2>
+                    <p>La siguiente tabla muestra una comparativa de los tiempos de aceleración de 0 a 100 km/h entre el Ford Mustang Shelby GT500 y varios de sus competidores en el segmento de los deportivos de alto rendimiento. Esta métrica es una referencia clave para medir la capacidad de aceleración de los vehículos y su rendimiento en línea recta.
+                    En esta tabla, el Mustang Shelby GT500, con su impresionante motor V8 supercargado de 760 caballos de fuerza, logra una aceleración de 0 a 100 km/h en 3.5 segundos, colocándolo entre los deportivos más potentes de su categoría. A pesar de su increíble potencia, algunos rivales ofrecen tiempos más rápidos debido a factores como menor peso, tracción total o tecnologías avanzadas de transmisión.</p>
+                    <br>
+                    <table border= "1" id="tabla4" class="tabla_hover">
+                        <thead>
+                        <tr>
+                            <th>Modelo</th>
+                            <th></th>
+                            <th>Modelo</th>
+                            <th>Tiempos</th>
+                            <th>Ganador</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mustang Shelby GT500</td>
+                            <td>VS</td>
+                            <td>Dodge Challenger Hellcat</td>
+                            <td>3.5seg - 3.8seg</td>
+                            <td>Shelby GT500</td>
+                        </tr>
+                        <tr>
+                            <td>Mustang Shelby GT500</td>
+                            <td>VS</td>
+                            <td>Chevrolet Camaro ZLI</td>
+                            <td>3.5seg - 2.7seg</td>
+                            <td>Camaro ZLI</td>
+                        </tr>
+                        <tr>
+                            <td>Mustang Shelby GT500</td>
+                            <td>VS</td>
+                            <td>Chevrolet Corvette Z06</td>
+                            <td>3.5seg - 3seg</td>
+                            <td>Corvette Z06</td>
+                        </tr>
+                        <tr>
+                            <td>Mustang Shelby GT500</td>
+                            <td>VS</td>
+                            <td>Dodge Charger Hellcat</td>
+                            <td>3.5seg - 3.5seg</td>
+                            <td>Empate</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </section>
+            </section>
+        </main>
+        <footer><h5>Elaborado por Ali Salvador Pezzat Victoria</h5></footer>
+    </body>
+</html>
